@@ -14,6 +14,9 @@ client.on("message", (message) => {
  } else
  if (message.content.startsWith(prefix + "happy")) {
    message.channel.send(":smile:");
+ } else
+ if (message.content.startedWith(config.prefix + "keepplaylist")) {
+   message.channel.send("Alright! Your playlist is saved. :apple:");
  }
 });
 
